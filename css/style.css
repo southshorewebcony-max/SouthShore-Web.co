@@ -1,0 +1,597 @@
+/* =========================
+   SouthShore Web Co.
+   Coastal Premium Theme
+========================= */
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #061826;
+    color: white;
+    line-height: 1.6;
+}
+
+
+
+/* =========================
+   Navigation
+========================= */
+
+
+/* =========================
+   Navigation
+========================= */
+
+header {
+    background: #0b2239;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav h1 {
+    font-size: 28px;
+    color: white;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+
+/* =========================
+   Buttons
+========================= */
+
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+
+.primary-button {
+    background-color: #0284c7;
+    color: white;
+}
+
+
+.primary-button:hover {
+    background-color: #38bdf8;
+}
+
+
+.secondary-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #0ea5e9;
+}
+
+
+.secondary-button:hover {
+    background-color: #0ea5e9;
+}
+
+
+
+/* =========================
+   Hero Section
+========================= */
+
+
+.hero {
+    min-height: 90vh;
+    padding: 120px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    background:
+    radial-gradient(circle at right, #0ea5e9 0%, transparent 30%);
+}
+
+
+.hero-text {
+    width: 55%;
+}
+
+
+.hero-text h2 {
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+
+.hero-text p {
+    max-width: 650px;
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+
+.hero-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero-image img {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    transition: 0.3s ease;
+}
+
+
+.hero-image img:hover {
+    transform: translateY(-10px);
+}
+
+
+
+/* =========================
+   General Sections
+========================= */
+
+
+.section {
+    padding: 120px 8%;
+}
+
+
+.section h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+
+
+/* =========================
+   Why Choose Us
+========================= */
+
+
+#why-us {
+    background-color: #0b2239;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+#why-us h2 {
+    grid-column: 1 / -1;
+}
+
+
+#why-us div {
+    background-color: #102d47;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+#why-us h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+
+
+/* =========================
+   Services Pricing
+========================= */
+
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+#services h2 {
+    grid-column: 1 / -1;
+}
+
+
+#services div {
+    background-color: #0b2239;
+    padding: 40px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#services .primary-button {
+    margin-top: 30px;
+    align-self: flex-start;
+}
+
+#services h3 {
+    font-size: 30px;
+}
+
+
+#services h4 {
+    color: #38bdf8;
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+
+#services li {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+.maintenance {
+    color: #38bdf8;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.pricing-note {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 30px;
+    color: #cbd5e1;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.featured-package {
+    border: 2px solid #38bdf8;
+    transform: scale(1.03);
+    box-shadow: 0 20px 50px rgba(14,165,233,.25);
+}
+
+.badge {
+    display: inline-block;
+    background: #38bdf8;
+    color: #061826;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+#why-us div,
+#services div {
+
+    transition: .3s ease;
+
+}
+
+#why-us div:hover,
+#services div:hover {
+
+    transform: translateY(-8px);
+
+}
+/* =========================
+   Process
+========================= */
+
+
+#process {
+    background-color: #0b2239;
+}
+
+
+#process div {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+
+#process h3 {
+    color: #38bdf8;
+}
+
+
+
+/* =========================
+   About
+========================= */
+
+
+#about {
+    text-align: center;
+}
+
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+
+
+/* =========================
+   Contact
+========================= */
+
+
+.contact {
+    background-color: #0b2239;
+    text-align: center;
+}
+
+
+.contact p {
+    margin: 15px;
+}
+
+
+.contact a {
+    color: #38bdf8;
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+
+
+footer {
+    text-align: center;
+    padding: 50px 8%;
+    background-color: #061826;
+    color: #cbd5e1;
+}
+
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* =========================
+   Mobile Design
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    header {
+        padding: 20px 6%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    nav .primary-button {
+        width: 220px;
+        text-align: center;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 6%;
+        gap: 50px;
+        min-height: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        margin: 25px auto 35px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero-buttons a {
+        width: 260px;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 360px;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 80px 6%;
+    }
+
+    .section h2 {
+        font-size: 34px;
+    }
+
+
+    /* Why Us */
+
+    #why-us {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Services */
+
+    #services {
+        grid-template-columns: 1fr;
+    }
+
+    #services h4 {
+        font-size: 38px;
+    }
+
+
+    /* Process */
+
+    #process div {
+        text-align: center;
+    }
+
+
+    /* About */
+
+    #about p {
+        font-size: 18px;
+    }
+
+
+    /* Contact */
+
+    .contact p {
+        font-size: 18px;
+    }
+
+    .contact .primary-button {
+        width: 260px;
+        text-align: center;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 40px 6%;
+    }
+
+}
+section {
+
+    border-bottom: 1px solid rgba(255,255,255,.05);
+
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero-image img {
+        max-width: 550px;
+    }
+}
+
+/* Phones */
+@media (max-width: 767px) {
+    .hero-image img {
+        max-width: 360px;
+    }
+}
+.contact .primary-button {
+    color: white;
+}
